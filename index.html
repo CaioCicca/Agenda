@@ -4,32 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Agenda Telefonica</title>
 </head>
 
 <body>
-    <div>
-        <h2>Agenda Telefonica</h2>
+    <main>
+        <div id="main">
+            <h2>Agenda Telefonica</h2>
 
-        <div class="flex">
-            <input type="text" name="name" id="nome" placeholder="Nome Completo" required>
-            <input type="number" name="fixo" id="fixo" placeholder="Telefone Fixo" required maxlength="10">
-            <input type="number" name="fone" id="fone" placeholder="Telefone Celular" required maxlength="11">
-            <input type="text" name="foto" id="foto" placeholder="URL da foto" required>
-            <input type="date" name="data" id="data" required>
-            <input type="email" name="email" id="email" placeholder="E-mail" required>
+            <div class="flex">
+                <input type="text" name="name" id="nome" placeholder="Nome Completo" required>
+                <input type="number" name="fixo" id="fixo" placeholder="Telefone Fixo" required>
+                <input type="number" name="fone" id="fone" placeholder="Telefone Celular" required>
+                <input type="text" name="foto" id="foto" placeholder="URL da foto" required>
+                <input type="date" name="data" id="data" required>
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
+            </div>
+
+            <div class="flex">
+                <input type="number" name="cep" id="cep" placeholder="CEP" required>
+                <input type="text" name="cidade" id="cidade" placeholder="Cidade" required>
+                <input type="text" name="insta" id="insta" placeholder="@Instagram" required>
+                <input type="text" name="github" id="github" placeholder="@GitHub" required>
+                <button onclick="createUser()" id="addbutton">Adicionar contato</button>
+                <button onclick="atualizarUser()" id="editbutton" class="hidden">Atualizar contato</button>
+            </div>
+            <p class="hidden" id="error-msg"></p>
+            <p class="hidden" id="msg"></p>
+
+            <div class="hidden" id="userslista"></div>
         </div>
 
-        <div class="flex">
-            <input type="number" name="cep" id="cep" placeholder="CEP" required maxlength="8">
-            <input type="text" name="cidade" id="cidade" placeholder="Cidade" required>
-            <input type="text" name="insta" id="insta" placeholder="@Instagram" required>
-            <input type="text" name="github" id="github" placeholder="@GitHub" required>
-            <button onclick=""></button>
-        </div>
-    </div>
-
-    <div class="hidden"></div>
+        <div class="hidden lateral" id="mais"></div>
+    </main>
 </body>
-
-</html>
+<a href=""></a>
